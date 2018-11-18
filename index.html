@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Techinical Documentation</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+    <script src="main.js"></script>
+</head>
+<body>
+    <nav id="navbar">
+        <header>JS Documentation</header>
+        <ul> 
+          <a class="nav-link" href="#introducao" rel="internal"><li>INTRODUÇÂO</li></a>
+          <a class="nav-link" href="#simples" rel="internal"><li>Um componente simples</li></a>
+          <a class="nav-link" href="#Hello_world" rel="internal"><li>Hello world</li></a>
+          <a class="nav-link" href="#apresentando" rel="internal"><li>Apresentando o JSX</li></a>
+          <a class="nav-link" href="#elementos" rel="internal"><li>Elementos de redenrização</li></a>
+          <a class="nav-link" href="#componentes" rel="internal"><li>Componentes e Adereços</li></a>
+          <a class="nav-link" href="#ciclo" rel="internal"><li>Estado e Ciclo de vida</li></a>
+          <a class="nav-link" href="#eventos" rel="internal"><li>Manipulando Eventos</li></a>
+          <a class="nav-link" href="#renderizacao" rel="internal"><li>Redenrização Condicional</li></a>
+          <a class="nav-link" href="#listas" rel="internal"><li>Listas e Chaves</li></a>
+          <a class="nav-link" href="#formulario" rel="internal"><li>Formulários</li></a>
+          <a class="nav-link" href="#estado" rel="internal"><li>Levantar o Estado</li></a>
+          <a class="nav-link" href="#composicao" rel="internal"><li>Composição vs Herança</li></a>
+          <a class="nav-link" href="#pensando" rel="internal"><li>Pensando em React</li></a>
+          <a class="nav-link" href="#Reference" rel="internal"><li>Referência</li></a>
+        </ul>
+    </nav>
+        <main id="main-doc">
+          <section class="main-section" id="introducao">
+            <header>Introdução</header>
+            <article>
+                <p>React é uma biblioteca JavaScript para criar interfaces com o usuário.</p>
+                <p>React torna indolor criar UIs interativas. Crie visualizações simples para cada estado em seu aplicativo e o React atualizará e renderizará com eficiência os componentes corretos quando os dados forem alterados.
+                As exibições declarativas tornam seu código mais previsível e mais fácil de depurar.</p>
+                <p>Crie componentes encapsulados que gerenciam seu próprio estado e, em seguida, 
+                componha-os para criar interfaces de usuário complexas. Como a lógica do componente é 
+                escrita em JavaScript em vez de modelos, você pode facilmente passar dados avançados 
+                por meio do seu aplicativo e manter o estado fora do DOM.</p>
+                <p>Não fazemos suposições sobre o restante de sua pilha de tecnologia, para que você possa 
+                desenvolver novos recursos no React sem reescrever o código existente.</p>    
+            </article>
+          </section>
+          <section class="main-section" id="simples">
+            <header>Um componente simples</header>
+            <article>
+                <p>Os componentes React implementam um render()método que recebe dados de entrada 
+                e retorna o que exibir. Este exemplo usa uma sintaxe semelhante a XM
+                L chamada JSX. Os dados de entrada que são passados ​​para o componente podem ser 
+                acessados ​​por render()via this.props.</p>
+                <p><b>O JSX é opcional e não é necessário usar o React.</b> Experimente o Babel REPL 
+                para ver o código JavaScript bruto produzido pela etapa de compilação do JSX.</p>
+                <p><img src="./imagem/img1.PNG"></p>  
+            </article>  
+          </section>
+          <section>
+            <header>Hello World</header>
+            <article>
+                <p>Um exemplo simples no React se parece com isto:</p>
+                <img src="./imagem/img2.PNG">
+                <p>Ele exibe um título dizendo “Olá, mundo!” Na página.</p>
+            </article>
+          </section>
+        </main>    
+</body>
+</html>
