@@ -10,27 +10,23 @@
 </head>
 <body>
     <nav id="navbar">
-        <header>JS Documentation</header>
+        <header>DOC React<img src="./imagem/download.svg" width="56px" height="24"></header>
         <ul> 
-          <a class="nav-link" href="#introducao" rel="internal"><li>INTRODUÇÂO</li></a>
-          <a class="nav-link" href="#simples" rel="internal"><li>Um componente simples</li></a>
-          <a class="nav-link" href="#Hello_world" rel="internal"><li>Hello world</li></a>
-          <a class="nav-link" href="#apresentando" rel="internal"><li>Apresentando o JSX</li></a>
-          <a class="nav-link" href="#elementos" rel="internal"><li>Elementos de redenrização</li></a>
-          <a class="nav-link" href="#componentes" rel="internal"><li>Componentes e Adereços</li></a>
-          <a class="nav-link" href="#ciclo" rel="internal"><li>Estado e Ciclo de vida</li></a>
-          <a class="nav-link" href="#eventos" rel="internal"><li>Manipulando Eventos</li></a>
-          <a class="nav-link" href="#renderizacao" rel="internal"><li>Redenrização Condicional</li></a>
-          <a class="nav-link" href="#listas" rel="internal"><li>Listas e Chaves</li></a>
-          <a class="nav-link" href="#formulario" rel="internal"><li>Formulários</li></a>
-          <a class="nav-link" href="#estado" rel="internal"><li>Levantar o Estado</li></a>
-          <a class="nav-link" href="#composicao" rel="internal"><li>Composição vs Herança</li></a>
-          <a class="nav-link" href="#pensando" rel="internal"><li>Pensando em React</li></a>
-          <a class="nav-link" href="#Reference" rel="internal"><li>Referência</li></a>
+          <a class="nav-link" href="#Introdução" rel="internal"><li>Introdução</li></a>
+          <a class="nav-link" href="#Componente_Simples" rel="internal"><li>Componente Simples</li></a>
+          <a class="nav-link" href="#Hello_World" rel="internal"><li>Hello World</li></a>
+          <a class="nav-link" href="#Apresentando_o_JSX" rel="internal"><li>Apresentando o JSX</li></a>
+          <a class="nav-link" href="#Elementos_de_renderização" rel="internal"><li>Elementos de renderização</li></a>
+          <a class="nav-link" href="#Componentes_e_Adereços" rel="internal"><li>Componentes e Adereços</li></a>
+          <a class="nav-link" href="#Estado_e_Ciclo_de_vida" rel="internal"><li>Estado e Ciclo de vida</li></a>
+          <a class="nav-link" href="#Manipulando_Eventos" rel="internal"><li>Manipulando Eventos</li></a>
+          <a class="nav-link" href="#Renderização_Condicional" rel="internal"><li>Renderização Condicional</li></a>
+          <a class="nav-link" href="#Formulários" rel="internal"><li>Formulários</li></a>
+          <a class="nav-link" href="#Referência" rel="internal"><li>Referência</li></a>
         </ul>
     </nav>
         <main id="main-doc">
-          <section class="main-section" id="introducao">
+          <section class="main-section" id="Introdução">
             <header>Introdução</header>
             <article>
                 <p>React é uma biblioteca JavaScript para criar interfaces com o usuário.</p>
@@ -44,8 +40,8 @@
                 desenvolver novos recursos no React sem reescrever o código existente.</p>    
             </article>
           </section>
-          <section class="main-section" id="simples">
-            <header>Um componente simples</header>
+          <section class="main-section" id="Componente_Simples">
+            <header>Componente Simples</header>
             <article>
                 <p>Os componentes React implementam um render()método que recebe dados de entrada 
                 e retorna o que exibir. Este exemplo usa uma sintaxe semelhante a XM
@@ -56,12 +52,127 @@
                 <p><img src="./imagem/img1.PNG"></p>  
             </article>  
           </section>
-          <section>
+          <section class="main-section" id="Hello_World">
             <header>Hello World</header>
             <article>
                 <p>Um exemplo simples no React se parece com isto:</p>
                 <img src="./imagem/img2.PNG">
                 <p>Ele exibe um título dizendo “Olá, mundo!” Na página.</p>
+            </article>
+          </section>
+          <section class="main-section" id="Apresentando_o_JSX">
+            <header>Apresentando o JSX</header>
+            <article>
+                <p>Considere esta declaração de variável:</p>
+                <p><img src="./imagem/img3.PNG"></p>
+                <p>Essa sintaxe de tag engraçada não é nem uma string nem um HTML.
+                É chamado de JSX e é uma extensão de sintaxe para JavaScript. Recomendamos 
+                usá-lo com o React para descrever como deve ser a interface do usuário. O 
+                JSX pode lembrá-lo de uma linguagem de modelo, mas ela vem com todo o poder do JavaScript.
+                O JSX produz React "elements". Vamos explorar os renderizando para o DOM na próxima seção . 
+                Abaixo, você pode encontrar os fundamentos do JSX necessários para você começar.</p>
+            </article>  
+          </section>
+          <section class="main-section" id="Elementos_de_renderização">
+            <header>Elementos de renderização</header>
+            <article>
+                <p>Os elementos são os blocos de construção mais pequenos dos aplicativos React.
+                Um elemento descreve o que você deseja ver na tela:</p>
+                <p><img src="./imagem/img3.PNG"></p>
+                <p>Ao contrário dos elementos DOM do navegador, os elementos React são objetos 
+                simples e baratos para serem criados. O React DOM cuida da atualização do DOM 
+                para corresponder aos elementos React.</p>
+            </article>
+          </section>
+          <section class="main-section" id="Componentes_e_Adereços">
+            <header>Componentes e Adereços</header>
+            <code></code>
+            <article>
+                <p>Os componentes permitem dividir a interface do usuário em partes independentes 
+                e reutilizáveis ​​e pensar em cada parte isoladamente. Esta página fornece uma introdução 
+                à ideia de componentes.</p>
+                <p>Conceitualmente, os componentes são como funções JavaScript. Eles aceitam entradas 
+                arbitrárias (chamadas de “adereços”) e retornam elementos React que descrevem o que deve aparecer na tela.</p>
+                <li><strong>Função e Componentes de Classe</strong></li>
+                <li>A maneira mais simples de definir um componente é escrever uma função JavaScript:</li>
+                <li><img src="./imagem/img4.PNG"></li>
+                <li>Essa função é um componente React válido porque aceita um único argumento de objeto “props” 
+                (que significa propriedades) com dados e retorna um elemento React. Chamamos esses componentes 
+                de “componentes de função” porque são literalmente funções JavaScript.</li>    
+            </article>
+          </section>
+          <section class="main-section" id="Estado_e_Ciclo_de_vida">
+            <header>Estado e Ciclo de vida</header>
+            <code></code>
+            <article>
+                <p>Considere o exemplo do relógio de uma das seções anteriores . Nos elementos de renderização, 
+                aprendemos apenas uma maneira de atualizar a interface do usuário. Nós chamamos 
+                ReactDOM.render()para mudar a saída renderizada:</p>
+                <p><img src="./imagem/img5.PNG"></p>
+            </article>
+          </section>
+          <section class="main-section" id="Manipulando_Eventos">
+            <header>Manipulando Eventos</header>
+            <article>
+                <p>Manipular eventos com elementos React é muito semelhante ao tratamento de eventos 
+                em elementos DOM. Existem algumas diferenças sintáticas:</p>
+                <p>Os eventos React são nomeados usando camelCase, em vez de minúsculas.<br>
+                Com o JSX, você passa uma função como manipulador de eventos, em vez de uma string.</p>
+                <p>Por exemplo, o HTML:</p>
+                <p><img src="./imagem/img6.PNG"></p>
+                <p>é ligeiramente diferente em Reagir:</p>
+                <p><img src="./imagem/img7.PNG"></p>
+            </article>
+          </section>
+          <section class="main-section" id="Renderização_Condicional">
+            <header>Renderização Condicional</header>
+            <code></code>
+            <article>
+                <p>No React, você pode criar componentes distintos que encapsulam o comportamento de 
+                que você precisa. Então, você pode renderizar apenas alguns deles, dependendo do estado do seu aplicativo.</p>
+                <p>A renderização condicional no React funciona da mesma forma que as condições funcionam em JavaScript. 
+                Use operadores de JavaScript como ifou o operador condicional para criar elementos que representam 
+                o estado atual e deixe o React atualizar a interface do usuário para correspondê-los.</p>    
+                <p>Considere estes dois componentes:</p>
+                <p><img src="./imagem/img8.PNG"></p>
+                <p>Vamos criar um Greetingcomponente que exiba qualquer um desses componentes, 
+                dependendo de o usuário estar logado:</p>
+                <p><img src="./imagem/img9.PNG"></p>    
+            </article>
+          </section>
+          <section class="main-section" id="Formulários">
+            <header>Formulários</header>
+            <code></code>
+            <article>
+                <p>Os elementos de formulário HTML funcionam de maneira um pouco diferente de outros elementos 
+                DOM no React, porque os elementos de formulário mantêm naturalmente algum estado interno. 
+                Por exemplo, este formulário em HTML simples aceita um único nome:</p>
+                <p><img src="./imagem/img10.PNG"></p>
+                <p>Este formulário tem o comportamento de formulário HTML padrão de navegar para uma nova 
+                página quando o usuário envia o formulário. Se você quiser esse comportamento no React, ele 
+                simplesmente funciona. Mas na maioria dos casos, é conveniente ter uma função JavaScript que 
+                manipule o envio do formulário e tenha acesso aos dados que o usuário inseriu no formulário. 
+                A maneira padrão de conseguir isso é com uma técnica chamada “componentes controlados”.</p>
+                <p><strong>Componetes Controlado</strong></p>
+                <li><p>Em HTML, os elementos de formulário, como input, textarea e select normalmente mantêm 
+                seu próprio estado e o atualizam com base na entrada do usuário. Em React, o estado mutável é 
+                normalmente mantido na propriedade state dos componentes e atualizado apenas com setState().</p></li>    
+                <li><p>Podemos combinar os dois fazendo o estado React ser a “única fonte da verdade”. Em seguida, 
+                o componente React que renderiza um formulário também controla o que acontece nesse formulário 
+                na entrada subsequente do usuário. Um elemento de formulário de entrada cujo valor é controlado 
+                pelo React dessa maneira é chamado de “componente controlado”.</p></li>    
+                <li><p>Por exemplo, se quisermos que o exemplo anterior registre o nome quando ele é enviado, podemos 
+                escrever o formulário como um componente controlado:</p></li>
+                <p><img src="./imagem/img11.PNG"></p>
+                <p>Mais informações aqui: <a href="https://reactjs.org/docs/forms.html" target="_blank">Form React</a></p>    
+            </article>
+          </section>
+          <section class="main-section" id="Referência">
+            <header>Referência</header>
+            <code></code>
+            <article>
+                <p>Todo o conteúdo foi retirado daqui 
+                <a href="https://reactjs.org/docs/getting-started.html" target="_blank">DOC React</a></p>
             </article>
           </section>
         </main>    
